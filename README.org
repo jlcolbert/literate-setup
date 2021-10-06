@@ -1,0 +1,58 @@
+#+begin_center
+Literate Configuration & Programming Setup
+#+end_center
+
+# -----
+
+# Install | Documentation | FAQ | Screenshots
+
+# -----
+
+* Table of Contents :toc_3:
+- [[#introduction][Introduction]]
+- [[#features][Features]]
+- [[#prerequisites][Prerequisites]]
+
+* Introduction
+Literate programming changed how I approach any sort of coding or writing.
+
+I do not have a background in computer science or programming.
+However, I love to tinker, and I interact with JavaScript frequently in my job.
+I am also getting more and more interested in the digital humanities and digital scholarship.
+
+Literate programming is a style of programming in which you tell the computer what you want it to do via natural language and human logic.
+You give information and context, the how and why, just as you would with documentation.
+But embedded in that documentation are code blocks;
+these code blocks are then "tangled" to external documents, creating whatever software or program.
+Instead of writing your code and documentation separately, you do it all in one place.
+
+Another benefit of this method is that you don't necessarily have to write it in the order it will eventually tangle in.
+Using tools like noweb, you can introduce your chunks and then actually write them later, in any order.
+It's very nifty!
+
+I use literate programming to configure my Doom Emacs as well as my computer's dotfiles.
+I have also started using it in my job as a librarian;
+I have to configure our Primo VE discovery layer, and I use literate programming in our Node.js development environment.
+
+I have given several presentations recently on the importance of good documentation and how literate programming can be a method for that.
+However, a one hour or less presentation is not a good venue for such a demonstration.
+Hence, this repository.
+
+I hope you find it useful!
+
+* Features
++ Org Mode
++ Emacs
++ Embedded code blocks
++ Reproducible code and research
++ Natural language and human logic
+
+* Prerequisites
+This is based on my own configuration.
+It is very possible to do literate programming without this setup, but this is what I have.
+You can look at [[https://github.com/jlcolbert/dotfiles/blob/main/.dotfiles.org][my dotfiles]] and [[https://github.com/jlcolbert/dotfiles/blob/main/.doom.d/config.org][my Doom Emacs configuration]] for more details on my setup.
+
++ [[https://brew.sh/][Homebrew]]
++ Emacs 27.1+ (I have 28.0.5)
++ [[https://github.com/hlissner/doom-emacs][Doom Emacs]]
++ Lots of patience

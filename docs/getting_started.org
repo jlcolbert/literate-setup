@@ -1,0 +1,41 @@
+#+title:     Getting Started
+#+author:    Jay L. Colbert
+#+email:     jay.colbert@unh.edu
+
+* Table of Contents :toc_3:
+- [[#install][Install]]
+- [[#configure][Configure]]
+- [[#your-first-literate-document][Your First Literate Document]]
+
+* Install
+In order to have your environment set up like mine, you will need to install Emacs and Doom Emacs.
+You can read how to do that for your own operating system here: https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#install
+
+I use emacs-plus, and I natively compile it for Emacs 28+.
+You can see step-by-step how I install it here: https://github.com/jlcolbert/dotfiles/blob/main/.doom.d/config.org#prerequisites
+
+* Configure
+The thing I have liked about Doom Emacs (and I have not tried any other configuration) is that it already has =org-babel= configured.
+This means that you don't have to do any other configuration to get this to work!
+
+What you /do/ need to do is:
+1. In your =init.el=, uncomment any language you will want to work with, including =org=. If you are someone coming from one of my presentations for doing this with the Primo Development Environment, uncomment =javascript= and =web=. You don't necessarily need to enable the =lsp= tool or the flags for the languages unless you want an experience similar to VS Code.
+2. To make your life easy, install and configure =org-auto-tangle=. You can see how to do this here: https://github.com/jlcolbert/dotfiles/blob/main/.doom.d/config.org#org-auto-tangle
+
+* Your First Literate Document
+Alright, so you've got everything set up.
+Now we need to create our first literate document!
+A good place to start would be your Doom Emacs configuration, but you could do this with anything.
+
+1. Create a =.org= document. Title it whatever, but make sure it has =.org= as the extension.
+2. We'll worry about the title and other header information later. It's not necessarily important except for auto-tangle. For that, at the top of your document put ~#+auto_tangle: t~.
+3. Outline your document with headings, just like the one you're reading now!
+4. Create a code block. To do this, type ~<s~ and hit =TAB=. This will create a source code block for you! To do it manually, type ~#+begin_src~, hit enter twice, and type ~#+end_src~. Your code will go in the space between those two.
+5. Type the name of your desired language after ~#+begin_src~. For example, for JavaScript, it would be ~#+begin_src javascript~.
+6. Enter the name of the file you want your code to tangle to. This filepath will be relative to your document. For example, if you document were the =README= of one of your Primo VE's view customizations, this might be ~js/main.js~. What you need to do is, after where you've typed ~javascript~, hit space and type ~:tangle js/main.js~ or whatever filename you need.
+7. Repeat this for every code block. Remember: You can break it up however you want! Try to do a code block for each chunk you would want to explain. I have done things line-by-line before.
+8. Hit save!
+
+If you want to get fancy with how you order things, or if you want to break a larger chunk into smaller chunks, read here for how to do NoWeb syntax.
+
+When you need to update your code, /you only need to do it in your =.org= document/.

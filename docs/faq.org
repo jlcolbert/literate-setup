@@ -1,0 +1,34 @@
+#+title:     Frequently Asked Questions
+#+author:    Jay L. Colbert
+#+email:     jay.colbert@unh.edu
+
+* Table of Contents :toc_3:
+- [[#do-i-have-to-use-emacs][Do I have to use Emacs?]]
+- [[#where-can-i-see-some-examples-of-yours][Where can I see some examples of yours?]]
+- [[#where-can-i-learn-more][Where can I learn more?]]
+
+* Do I have to use Emacs?
+No, but that's what I know how to set up.
+You can also use Jupyter notebooks;
+however, those are primarily for Python.
+You can install all kernels, but I don't know if they are as extensive as the ones for Emacs and Org Mode.
+
+RMarkdown is another wonderful option if you write a lot of R code!
+
+* Where can I see some examples of yours?
+You can view my:
++ [[https://github.com/jlcolbert/dotfiles][literate configuration dotfiles]],
++ [[https://github.com/jlcolbert/dotfiles/blob/main/.doom.d/config.org][Doom Emacs configuration]],
++ or [[https://github.com/jlcolbert/primo-explore-views/blob/main/docker.org][Docker]] and view package configuration for Primo VE. (TODO)
+
+* Where can I learn more?
+You can learn more about literate programming here:
++ http://literateprogramming.com/
++ http://www.worldcat.org/oclc/1205554874
++ https://leanpub.com/lit-config/read
++ https://rrajath.com/posts/using-literate-configuration-for-all-text-based-configs/
++ https://www.offerzen.com/blog/literate-programming-empower-your-writing-with-emacs-org-mode
+
+And you can learn more about working with source code in Org Mode here:
++ https://orgmode.org/manual/Working-with-Source-Code.html
++ https://orgmode.org/worg/org-contrib/babel/languages/index.html
