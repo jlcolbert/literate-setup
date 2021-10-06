@@ -9,11 +9,6 @@
 </div>
 #+end_export
 
-* Table of Contents :toc_3:
-- [[#introduction][Introduction]]
-- [[#features][Features]]
-- [[#prerequisites][Prerequisites]]
-
 * Introduction
 Literate programming changed how I approach any sort of coding or writing.
 
