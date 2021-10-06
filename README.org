@@ -2,11 +2,11 @@
 Literate Configuration & Programming Setup
 #+end_center
 
-# -----
+-----
 
-# Install | Documentation | FAQ | Screenshots
+[[https://github.com/jlcolbert/literate-setup/blob/main/docs/getting_started.org][Getting Started]] | [[https://github.com/jlcolbert/literate-setup/blob/main/docs/index.org][Documentation]] | [[https://github.com/jlcolbert/literate-setup/blob/main/docs/faq.org][FAQ]] | Screenshots
 
-# -----
+-----
 
 * Table of Contents :toc_3:
 - [[#introduction][Introduction]]
